@@ -1,25 +1,25 @@
 class Hatcheck < Formula
   desc "Claude Code and Codex accounts on one computer, each kept apart"
   homepage "https://hatcheck.dev"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.3.0/hatcheck-aarch64-apple-darwin.tar.xz"
-      sha256 "6cf590872b0014caf6cf959e71686fbe59c4bdd3f8c0f91623faed32d35d54d2"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-aarch64-apple-darwin.tar.xz"
+      sha256 "435ac457d32d2165f09ca9fe6a7b4f046007d0356df372558229773e0db197cf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.3.0/hatcheck-x86_64-apple-darwin.tar.xz"
-      sha256 "51be0331a8648f4bd1e27e0247789196e68c59596bbc2b472a9f078b412810a7"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-x86_64-apple-darwin.tar.xz"
+      sha256 "daedb607704b5f537efc2f12fc1d2192394f4fdca45cd636aef4408479b06273"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.3.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "25df4ccfe936932795129477b2abec2c81a6f8289f8f3cf0fd3002b58d680e5a"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "71ea958e5b9eb6e37ae6f39cd97e36965a7314e72bfcec336ebe7167a872fb26"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.3.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0f4559f2385f4414cc305623e79770abb0a7c6b226a9e0a6429d7f7edb710b64"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "13c086317b11f04db7d54e0c2970074ca37634f1372c9b63908d1deb63dc3b82"
     end
   end
   license "MIT"
