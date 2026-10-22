@@ -1,25 +1,25 @@
 class Hatcheck < Formula
   desc "Claude Code and Codex accounts on one computer, each kept apart"
   homepage "https://hatcheck.dev"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-aarch64-apple-darwin.tar.xz"
-      sha256 "435ac457d32d2165f09ca9fe6a7b4f046007d0356df372558229773e0db197cf"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-aarch64-apple-darwin.tar.xz"
+      sha256 "a71f742ee540f6ff41b9ed48d7a801fb7ee7365640a4229c147f2455c0b83882"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-x86_64-apple-darwin.tar.xz"
-      sha256 "daedb607704b5f537efc2f12fc1d2192394f4fdca45cd636aef4408479b06273"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-x86_64-apple-darwin.tar.xz"
+      sha256 "d9ac7d5da16053a375fb1d9bb19bed2cc654ae47c3efaf9c7ae66b10900a2c38"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "71ea958e5b9eb6e37ae6f39cd97e36965a7314e72bfcec336ebe7167a872fb26"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b14fdee4f7d1ccfff1ec30723a9433872d80ea643ad12ef07dd653d0982797b7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.4.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "13c086317b11f04db7d54e0c2970074ca37634f1372c9b63908d1deb63dc3b82"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8717d40672db70874fbdf79863ac880a9f8ca2af308b04b6ee4764b921e6c89c"
     end
   end
   license "MIT"
@@ -51,16 +51,16 @@ class Hatcheck < Formula
 
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
+      bin.install "ck", "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
     end
     if OS.mac? && Hardware::CPU.intel?
-      bin.install "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
+      bin.install "ck", "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
     end
     if OS.linux? && Hardware::CPU.arm?
-      bin.install "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
+      bin.install "ck", "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
     end
     if OS.linux? && Hardware::CPU.intel?
-      bin.install "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
+      bin.install "ck", "cl", "claude-k", "claude-z", "cx", "hat", "hatcheck"
     end
 
     install_binary_aliases!
