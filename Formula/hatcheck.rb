@@ -1,25 +1,25 @@
 class Hatcheck < Formula
-  desc "Claude Code and Codex accounts on one computer, each kept apart"
+  desc "Claude Code, Codex, Antigravity CLI, Kimi Code CLI, ZCode, DeepSeek Harness, MiniMax Code and Qwen Code accounts on one computer, each kept apart"
   homepage "https://hatcheck.dev"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-aarch64-apple-darwin.tar.xz"
-      sha256 "a71f742ee540f6ff41b9ed48d7a801fb7ee7365640a4229c147f2455c0b83882"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-aarch64-apple-darwin.tar.xz"
+      sha256 "513529437488c7ddb14ca727d18e68fa77bc1f3734bebf63f3b7c5b950b29f13"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-x86_64-apple-darwin.tar.xz"
-      sha256 "d9ac7d5da16053a375fb1d9bb19bed2cc654ae47c3efaf9c7ae66b10900a2c38"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-x86_64-apple-darwin.tar.xz"
+      sha256 "6706c6dfab1e41d6c6e6e8b3fcd49b52eea373f754cda0cd48e32639373a93b3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b14fdee4f7d1ccfff1ec30723a9433872d80ea643ad12ef07dd653d0982797b7"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "952e725747f88a73c7eb887433e254c12bab549ccdc6f558095da125acb4a149"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.5.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8717d40672db70874fbdf79863ac880a9f8ca2af308b04b6ee4764b921e6c89c"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c72b38e09fd426bbdbf41249a6ff5742f3222bcab7be838f10f289c5fa2904d1"
     end
   end
   license "MIT"
