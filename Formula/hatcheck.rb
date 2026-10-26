@@ -1,25 +1,25 @@
 class Hatcheck < Formula
-  desc "Claude Code, Codex, Antigravity CLI, Kimi Code CLI, ZCode, DeepSeek Harness, MiniMax Code and Qwen Code accounts on one computer, each kept apart"
+  desc "Claude Code, Codex, Antigravity CLI, Kimi Code CLI, ZCode, DeepSeek Harness, MiniMax Code, Qwen Code, GitHub Copilot CLI and OpenCode accounts on one computer, each kept apart"
   homepage "https://hatcheck.dev"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-aarch64-apple-darwin.tar.xz"
-      sha256 "513529437488c7ddb14ca727d18e68fa77bc1f3734bebf63f3b7c5b950b29f13"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-aarch64-apple-darwin.tar.xz"
+      sha256 "b7fc71ed890c32c7a7a2741f887b718041c5ae4cb50a3df7b8b13a8013925d70"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-x86_64-apple-darwin.tar.xz"
-      sha256 "6706c6dfab1e41d6c6e6e8b3fcd49b52eea373f754cda0cd48e32639373a93b3"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-x86_64-apple-darwin.tar.xz"
+      sha256 "6bdfe41c1f3dcaa92caae6d8ed6bdb2bd0710d79a6df60a8ee798adc58e2a95d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "952e725747f88a73c7eb887433e254c12bab549ccdc6f558095da125acb4a149"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0a694ec6aaefd1e630b6935c5a2584344d85dafb5b157a87fb9785ce2c47cb9a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.6.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c72b38e09fd426bbdbf41249a6ff5742f3222bcab7be838f10f289c5fa2904d1"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "66982a192fefcc8bbde72dd6c856c785551b2b5dff32c18156ae3e93db2ada40"
     end
   end
   license "MIT"
