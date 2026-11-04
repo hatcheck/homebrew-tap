@@ -1,25 +1,25 @@
 class Hatcheck < Formula
   desc "Claude Code, Codex, Antigravity CLI, Kimi Code CLI, ZCode, DeepSeek Harness, MiniMax Code, Qwen Code, GitHub Copilot CLI and OpenCode accounts on one computer, each kept apart"
   homepage "https://hatcheck.dev"
-  version "0.7.0"
+  version "0.7.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-aarch64-apple-darwin.tar.xz"
-      sha256 "b7fc71ed890c32c7a7a2741f887b718041c5ae4cb50a3df7b8b13a8013925d70"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.1/hatcheck-aarch64-apple-darwin.tar.xz"
+      sha256 "419b91056dc87e394ca68912976bf2edb37fd9a724a8b7ea4b19bc20814322ed"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-x86_64-apple-darwin.tar.xz"
-      sha256 "6bdfe41c1f3dcaa92caae6d8ed6bdb2bd0710d79a6df60a8ee798adc58e2a95d"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.1/hatcheck-x86_64-apple-darwin.tar.xz"
+      sha256 "b41d8e4bca946ec867db5e8d76c1563636a668e4e54cfaa8ee25a5359cb0fe72"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0a694ec6aaefd1e630b6935c5a2584344d85dafb5b157a87fb9785ce2c47cb9a"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.1/hatcheck-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "04a5b27844699f4ee0b493c879f955af799b6a2f4b976fa854f8854f923019f9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.0/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "66982a192fefcc8bbde72dd6c856c785551b2b5dff32c18156ae3e93db2ada40"
+      url "https://github.com/hatcheck/hatcheck/releases/download/v0.7.1/hatcheck-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b9711be01a5116e38e1543d3534c2ddb08f83031854d1387335fa9e58f77e372"
     end
   end
   license "MIT"
